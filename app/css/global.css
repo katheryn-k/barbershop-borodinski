@@ -6,6 +6,7 @@
   --color-gray-deep: #4e4e4e;
   --color-tundora: #404040;
   --color-dark-gray: #353535;
+  --color-mine-shaft: #303030;
   --color-roman-coffee: #826550;
   --color-shingle-fawn: #6a4d38; }
 
@@ -32,9 +33,14 @@ html {
   box-sizing: inherit; }
 
 body {
+  min-width: 320px;
   margin: 0;
   font-family: "PT Sans Narrow", sans-serif;
-  background-color: var(--color-white); }
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--color-pampas);
+  background-color: var(--color-mine-shaft); }
 
 img {
   max-width: 100%; }
@@ -72,8 +78,8 @@ ul {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px; }
+  padding: 0 120px;
+  max-width: 960px; }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none; }

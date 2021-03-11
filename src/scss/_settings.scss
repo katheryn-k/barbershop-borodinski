@@ -9,9 +9,14 @@ html {
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   font-family: "PT Sans Narrow", sans-serif;
-  background-color: var(--color-white);
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--color-pampas);
+  background-color: var(--color-mine-shaft);
 }
 
 img {
@@ -60,8 +65,8 @@ ul {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+  padding: 0 120px;
+  max-width: 960px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
