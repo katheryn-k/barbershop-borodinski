@@ -1,1 +1,15 @@
-//
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
+  background-image: url("../img/bg-desktop-inner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-black);
+
+  &__container {
+    order: 2;
+    padding-top: 129px;
+  }
+}

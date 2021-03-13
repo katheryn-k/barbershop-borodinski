@@ -3,6 +3,7 @@
   --color-white: #fff;
   --color-pampas: #f7f4f1;
   --color-spring-wood: #f8f5f2;
+  --color-silver: #cacaca;
   --color-gray-deep: #4e4e4e;
   --color-tundora: #404040;
   --color-dark-gray: #353535;
@@ -12,14 +13,14 @@
 
 @font-face {
   font-family: "PT Sans Narrow";
-  src: url("../fonts/../fonts/pt-sans-narrow.woff2.woff2") format("woff2");
+  src: url("../fonts/pt-sans-narrow.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal; }
 
 @font-face {
   font-family: "PT Sans Narrow";
-  src: url("../fonts/../fonts/pt-sans-narrow-bold.woff2.woff2") format("woff2");
+  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: bold; }
@@ -33,11 +34,11 @@ html {
   box-sizing: inherit; }
 
 body {
-  min-width: 320px;
   margin: 0;
+  min-width: 320px;
   font-family: "PT Sans Narrow", sans-serif;
-  font-size: 18px;
   font-weight: normal;
+  font-size: 18px;
   line-height: 1.5;
   color: var(--color-pampas);
   background-color: var(--color-mine-shaft); }
@@ -50,6 +51,7 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
   padding: 0; }
 
 .is-outer {
@@ -61,6 +63,19 @@ ul {
 
 .is-hidden {
   display: none !important; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0); }
 
 .for-mobile {
   display: none; }

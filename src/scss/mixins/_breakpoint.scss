@@ -1,4 +1,9 @@
-@mixin desktop {
+@mixin desktop-1200 {
+	@media (min-width: (1200px)) {
+		@content;
+	}
+}
+@mixin desktop-1025 {
 	@media (min-width: (1025px)) {
 		@content;
 	}
@@ -15,3 +20,10 @@
     @content;
   }
 }
+
+@mixin min-mobile {
+	@media (min-width: (768px)) {
+		@content;
+	}
+}
+

@@ -1,4 +1,4 @@
- @import 'vars';
+@import 'global';
 
 // CUSTOM COMPONENTS STYLES
 // .burger {
@@ -10,3 +10,5 @@
 // }
 
 @import "./components/header";
+@import "./components/page-logo";
+@import "./components/page-navbar";

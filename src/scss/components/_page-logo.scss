@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include min-mobile {
+    min-height: 153px;
+  }
+
+  &-image {
+    display: block;
+    @include min-mobile {
+      width: 370px;
+      height: 153px;
+    }
+  }
+}
