@@ -59,6 +59,7 @@ ul {
   left: -9999px !important; }
 
 .site-container {
+  position: relative;
   overflow: hidden; }
 
 .is-hidden {

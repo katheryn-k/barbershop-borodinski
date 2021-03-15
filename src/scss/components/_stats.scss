@@ -1,0 +1,81 @@
+.stats {
+  min-height: 318px;
+
+  &__container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    display: grid;
+    grid-template-columns: minmax(320px, auto) minmax(640px, auto);
+    grid-template-rows: minmax(318px, auto);
+    padding: 0;
+  }
+
+  &__header {
+    padding: 27px 37px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  &__title {
+    margin: 0 0 41px 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  &__promo {
+    margin: 0;
+    padding-right: 30px;
+    padding-bottom: 32px;
+    font-size: 20px;
+    line-height: 27px;
+
+    &--gray {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      color: var(--color-silver);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: minmax(80px, 159px) minmax(80px, 159px);
+  }
+
+  &__item {
+    padding: 25px 35px 28px;
+  }
+
+  &__figure {
+    position: relative;
+    margin: 0 0 7px 0;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+
+    &--star {
+      position: relative;
+      left: 12px;
+      top: -26px;
+      font-size: 60%;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: lowercase;
+  }
+
+  @each $color in tundora, gray-deep, dark-gray, tundora {
+
+    .stats__item--#{$color} {
+      background-color: var(--color-#{$color});
+    }
+  }
+}
