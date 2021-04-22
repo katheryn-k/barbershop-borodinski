@@ -160,6 +160,10 @@ ul {
     .header {
       min-height: 135px;
       background-color: var(--color-mine-shaft); } }
+  @media (min-width: 768px) and (device-pixel-ratio: 1.5), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .header {
+      background-image: url("../img/bg-desktop-inner.jpg");
+      background-size: 1338px auto; } }
   @media (min-width: 768px) {
     .header {
       min-height: 720px;
