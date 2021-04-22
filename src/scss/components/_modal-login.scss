@@ -1,0 +1,227 @@
+.blocker {
+  @include mobile {
+    padding: 0 !important;
+  }
+}
+
+.modal-login {
+  border-radius: 0 !important;
+  padding: 0 !important;
+  width: 60%;
+  color: var(--color-black);
+  background-color: var(--color-spring-wood) !important;
+
+  p {
+    text-align: center;
+  }
+
+  @include mobile {
+    top: 30px;
+  }
+
+  @include tablet-width {
+    max-width: 420px !important;
+  }
+}
+
+.modal-login__container {
+  @include mobile {
+    min-width: auto;
+  }
+}
+
+.modal-login__title {
+  margin-top: 30px;
+  margin-bottom: 17px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: currentColor;
+
+  @include mobile {
+    font-size: 30px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+  }
+}
+
+.modal-login__description {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: currentColor;
+}
+
+.modal-login__form {
+  p {
+    @include mobile {
+      padding: 0 5px;
+    }
+
+    @include tablet-width {
+      padding: 0 15px;
+    }
+
+    @include desktop {
+      padding: 0 15px;
+    }
+  }
+}
+
+.modal-login__user-login {
+  background: url('../img/user.svg') 95% 50% no-repeat var(--color-white);
+}
+
+.modal-login__user-password {
+  background: url('../img/locked.svg') 95% 50% no-repeat var(--color-white);
+}
+
+.modal-login__input {
+  border: 1px solid var(--color-pearl-bush);
+
+  @include mobile {
+    padding: 13px 50px 13px 13px;
+    width: 100%;
+  }
+
+  @include tablet-width {
+    padding: 20px 50px 20px 20px;
+    width: 80%;
+  }
+
+  @include desktop {
+    padding: 20px 50px 20px 20px;
+    width: 75%;
+  }
+}
+
+.modal-login__input::placeholder {
+  color: currentColor;
+}
+
+.modal-login__password-settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.password-settings__item {
+  margin: 0 0 33px;
+  padding: 0;
+}
+
+.modal-login__label {
+  @include flex-center();
+}
+
+.modal-login__keep-signed {
+  display: none;
+}
+
+.modal-login__custom-checkbox-indicator {
+  display: inline-block;
+  margin-right: 7px;
+  border: 1px solid var(--color-pearl-bush);
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-white);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-pearl-bush);
+  }
+}
+
+.modal-login__label > .modal-login__keep-signed:checked + .modal-login__custom-checkbox-indicator::before {
+  background-image: url('../img/checkbox.svg');
+  background-position: center;
+  background-size: 22px 16px;
+  background-repeat: no-repeat;
+}
+
+.modal-login__restore-password {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+.modal-login__submit {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-roman-coffee);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-sisal);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.4);
+    background: var(--color-sisal);
+  }
+}
+
+.modal-login__close {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-black);
+  background-color: var(--color-white);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-sisal);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.4);
+    background: var(--color-sisal);
+  }
+}
+
+.modal-login__btn-group {
+  @include mobile {
+    .modal-login__submit {
+      padding: 15px 30px;
+
+      span {
+        display: none;
+      }
+    }
+
+    .modal-login__close {
+      display: inline-block;
+      padding: 15px 30px;
+    }
+  }
+
+  @include tablet-width {
+    .modal-login__submit {
+      padding: 15px 30px;
+    }
+
+    .modal-login__close {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .modal-login__submit {
+      padding: 15px 30px;
+    }
+
+    .modal-login__close {
+      display: none;
+    }
+  }
+}

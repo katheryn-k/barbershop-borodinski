@@ -1,0 +1,191 @@
+.advantages {
+  position: relative;
+  background-image: url("../img/light-corner.svg");
+  background-position: bottom;
+  background-size: 100% 65px;
+  background-repeat: no-repeat;
+
+  .slick__custom-dots {
+    button {
+      border: 1px solid var(--color-white);
+    }
+
+    @include mobile {
+      bottom: 15px;
+    }
+
+    @media (max-width: 320px) {
+      bottom: 35px;
+    }
+  }
+
+  .slick-active {
+    button {
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.advantages__container {
+  @include mobile {
+    padding: 0 0 5px;
+  }
+
+  @include tablet-width {
+    padding: 0 0 4em;
+  }
+
+  @include desktop {
+    padding: 0 0 4em;
+  }
+}
+
+.advantages__list {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet-width {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include tablet-width {
+    display: block;
+    padding-top: 7px;
+    padding-left: 22%;
+    text-align: unset;
+  }
+
+  @include desktop {
+    display: block;
+    padding-top: 15px;
+    padding-left: 0;
+    text-align: unset;
+  }
+}
+
+.advantages__item:not(:first-child) {
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet-width {
+    display: block;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @include tablet-width {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  @include desktop {
+    margin-right: 41px;
+    border: none;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 94px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    position: relative;
+    margin: auto;
+    transform: translateY(25px);
+  }
+
+  @include tablet-width {
+    position: absolute;
+    left: 2em;
+    top: 3em;
+    transform: none;
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 8em;
+    top: -5em;
+    transform: translateX(-50%);
+  }
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @include mobile {
+    margin: 55px 5px 5px;
+  }
+
+  @include tablet-width {
+    margin: 40px 0 15px 20px;
+  }
+
+  @include desktop {
+    margin: 25px 20px 15px 15px;
+  }
+}
+
+.advantages__description {
+  font-size: 20px;
+  line-height: 27px;
+
+  @include mobile {
+    padding: 0 45px;
+  }
+
+  @include tablet-width {
+    padding: 0 15px;
+  }
+
+  @include desktop {
+    padding: 0 15px;
+  }
+}
+
+@each $image in scissors, armchair, barbers-pole {
+  .advantages__item--#{$image}::before {
+    background-image: url("../img/#{$image}.svg");
+  }
+}
+
+.slick-dots {
+  @include mobile {
+    display: block;
+  }
+
+  @include tablet-width {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}

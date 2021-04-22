@@ -12,7 +12,7 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: "PT Sans Narrow", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: var(--color-pampas);
@@ -48,16 +48,7 @@ ul {
 }
 
 .visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  clip-path: inset(100%);
-  overflow: hidden;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  white-space: nowrap;
-  clip: rect(0, 0, 0, 0);
+  @include visually-hidden();
 }
 
 .for-mobile {
@@ -78,10 +69,66 @@ ul {
   cursor: pointer;
 }
 
+.section__title {
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @include tablet-width {
+    font-size: 40px;
+    text-align: unset;
+  }
+
+  @include desktop {
+    font-size: 40px;
+    text-align: unset;
+  }
+}
+
+.section__btn {
+  display: inline-block;
+  border: 1px solid var(--color-pearl-bush);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-black);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.4);
+    background: #d5c9bd;
+  }
+}
+
 .container {
-  margin: 0 auto;
-  padding: 0 120px;
-  max-width: 960px;
+  @include mobile {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    max-width: 766px;
+  }
+
+  @include tablet-width {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 640px;
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

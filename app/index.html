@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
 	<div class="site-container">
 
-		<header class="header">
+		<header class="header site-header">
     <div class="header__container container">
-        <a class="header__logo logo" href="#">
+        <a class="header__logo logo" href="#" aria-label="Логотип Барбершопа">
             <picture>
                 <source media="(min-width: 1200px)" srcset="../img/logotype-v3.svg" type="image/svg+xml">
                 <source media="(min-width: 768px)" srcset="../img/logotype-v2.svg" type="image/svg+xml">
@@ -32,7 +35,7 @@
         <div class="navbar__wrapper">
             <ul class="navbar__list">
                 <li class="navbar__item navbar__item--active">
-                    <a class="navbar__link" href="#">
+                    <a class="navbar__link">
                         Главная
                     </a>
                 </li>
@@ -59,13 +62,13 @@
             </ul>
             <ul class="login">
                 <li class="login__item">
-                    <a class="login__link" href="#">
+                    <a class="login__link" href="#modal-login" aria-label="Вход в личный кабинет" rel="modal:open">
                         <svg class="login__icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 16 16">
                             <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
                             <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
                         </svg>
-                        Вход
+                        <span>Вход</span>
                     </a>
                 </li>
             </ul>
@@ -91,7 +94,7 @@
                 Мужская стрижка требует точного подхода.
                 Обратимся к статистике:
             </p>
-            <span class="stats__promo stats__promo--gray">
+            <span class="stats__promo--gray-top">
                 <sup>*</sup>
                  - приведенные данные правда
             </span>
@@ -114,17 +117,280 @@
                 <p class="stats__info">Лайков и комплиментов</p>
             </li>
         </ul>
+        <span class="stats__promo--gray-bottom">
+            <sup>*</sup>
+             - приведенные данные правда
+        </span>
+    </div>
+</section>
+            <section class="advantages">
+    <h2 class="visually-hidden">
+        Наши преимущества
+    </h2>
+    <div class="advantages__container container">
+        <ul class="advantages__list">
+            <li class="advantages__item advantages__item--scissors advantages__item--active">
+                <h3 class="advantages__title">
+                    Быстро
+                </h3>
+                <p class="advantages__description">
+                    Мы делаем свою работу быстро!
+                    Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки
+                </p>
+            </li>
+            <li class="advantages__item advantages__item--armchair">
+                <h3 class="advantages__title">
+                    Круто
+                </h3>
+                <p class="advantages__description">
+                    Забудьте, как вы стриглись раньше.
+                    Мы сделаем из вас звезду футбола или кино.
+                    Во всяком случае внешне.
+                </p>
+            </li>
+            <li class="advantages__item advantages__item--barbers-pole">
+                <h3 class="advantages__title">
+                    Дорого
+                </h3>
+                <p class="advantages__description">
+                    Наши мастера — профессионалы своего дела и не могут стоить дёшево.
+                    К тому же, разве цена не даёт определённый статус?
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+            <section class="news">
+    <div class="news__container container">
+        <h2 class="news__title section__title">
+            Новости и акции
+        </h2>
+        <ul class="news__list">
+            <li class="news__content">
+                <a class="news__item" href="#">
+                    <time class="news__date" datetime="2020-09-29">
+                        <b class="news__day">
+                            29
+                        </b>
+                        сент
+                    </time>
+                    <p class="news__text">
+                        Нам наконец завезли Ягермайстер!
+                        Теперь вы можете пропустить стаканчик во время стрижки.
+                    </p>
+                </a>
+            </li>
+            <li class="news__content">
+                <a class="news__item" href="#">
+                    <time class="news__date" datetime="2020-09-29">
+                        <b class="news__day">
+                            19
+                        </b>
+                        сент
+                    </time>
+                    <p class="news__text">
+                        В нашей команде пополнение,
+                        Борис «Бритва» Стригунец пополнил наши стройные ряды.
+                        Спешите записаться!
+                    </p>
+                </a>
+            </li>
+            <li class="news__content">
+                <a class="news__item" href="#">
+                    <time class="news__date" datetime="2020-09-29">
+                        <b class="news__day">
+                            9
+                        </b>
+                        сент
+                    </time>
+                    <p class="news__text">
+                        Все дорожает, а наши стрижки нет!
+                        Как так?
+                        Приходите, постригитесь и узнаете, в чем здесь подвох!
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a class="news__to-all-btn section__btn btn-reset" href="#" aria-label="Показать больше новостей">
+            Показать все
+        </a>
+    </div>
+    <hr class="divider">
+</section>
+            <section class="reviews">
+    <div class="reviews__container container">
+        <h2 class="reviews__title section__title">
+            Отзывы о нас
+        </h2>
+        <div class="reviews__list">
+            <div class="reviews__item">
+                <blockquote class="reviews__content">
+                    <div class="reviews__author-avatar">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="../img/travis_desktop.jpg 1x,img/travis_desktop2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="../img/travis124x82.jpg 1x,img/travist2x.jpg 2x">
+                            <img class="reviews__author-image" src="../img/travis77x51.jpg" srcset="img/travism2x.jpg 2x" alt="На фото Трэвис Баркер">
+                        </picture>
+                    </div>
+                    <div class="reviews__text-wrapper">
+                        <cite class="reviews__author-name">
+                            Трэвис Баркер
+                        </cite>
+                        <p class="reviews__text">
+                            Спасибо за лысину!
+                            Был проездом в Москве, заскочил побриться,
+                            чтобы было видно новую татуировку!
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="reviews__item">
+                <blockquote class="reviews__content">
+                    <div class="reviews__author-avatar">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="../img/boroda_desktop.jpg">
+                            <source media="(min-width:768px)" srcset="../img/boroda_124x82test.jpg 1x,img/boroda_tx2.jpg 2x">
+                            <img class="reviews__author-image" src="../img/boroda_77x51.jpg" srcset="img/boroda_mx2.jpg 2x" alt="На фото Иван Бородайло">
+                        </picture>
+                    </div>
+                    <div class="reviews__text-wrapper">
+                        <cite class="reviews__author-name">
+                            Иван Бородайло
+                        </cite>
+                        <p class="reviews__text">
+                            В Бородинском ваша борода в надежных руках!
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="reviews__item">
+                <blockquote class="reviews__content">
+                    <div class="reviews__author-avatar">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="img/john_desktop.jpg 1x">
+                            <source media="(min-width:768px)" srcset="img/john124x82.jpg 1x,img/john_t2x.jpg 2x">
+                            <img class="reviews__author-image" src="img/john77x51.jpg" srcset="img/john_m2x.jpg 2x" alt="На фото Джон Смит">
+                        </picture>
+                    </div>
+                    <div class="reviews__text-wrapper">
+                        <cite class="reviews__author-name">
+                            Джон Смит
+                        </cite>
+                        <p class="reviews__text">
+                            Отличную стрижку мне сделали ребята.
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+        <a class="reviews__leave-feedback-btn section__btn btn-reset" href="#" aria-label="Показать больше новостей">
+            Оставить свой
+        </a>
     </div>
 </section>
         </main>
-
-		<footer class="footer">
-	<div class="container"></div>
+        <footer class="footer">
+	<div class="footer__container container">
+		<address class="contact-info">
+			<b class="contact-info__title">
+				Барбершоп Бородинский
+			</b>
+			<a class="contact-info__item contact-info--address" href="https://yandex.ru/maps/-/CCUU4RgM0A">
+				г. Санкт-Петербург, ул. Большая
+				Конюшенная 19/8
+			</a>
+			<a class="contact-info__item contact-info--phone" href="tel:+78125556666">
+				+7 (812) 555-66-65
+			</a>
+		</address>
+		<div class="social-info">
+			<b class="social-info__title">
+				Давайте дружить!
+			</b>
+			<ul class="social-info__list">
+				<li class="social-info__item">
+					<a class="social-info__link social-info__link--vk" href="#" aria-label="Мы Вконтакте"></a>
+				</li>
+				<li class="social-info__item">
+					<a class="social-info__link social-info__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
+				</li>
+				<li class="social-info__item">
+					<a class="social-info__link social-info__link--insta" href="#" aria-label="Мы в Инстаграме"></a>
+				</li>
+			</ul>
+		</div>
+		<address class="copyright-info">
+			<b class="copyright-info__title">
+				Разработано:
+			</b>
+			<a class="copyright-info__link btn-reset" href="#" aria-label="Перейти на сайт HTML ACADEMY">
+				HTML ACADEMY
+			</a>
+		</address>
+	</div>
 </footer>
 
+        <section class="modal-login modal" id="modal-login">
+    <div class="modal-login__container container">
+        <h2 class="modal-login__title">
+            Личный кабинет
+        </h2>
+        <p class="modal-login__description">
+            Введите свой логин и пароль, чтобы войти
+        </p>
+        <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label class="modal-login__label visually-hidden" for="user-login"></label>
+                <input class="modal-login__user-login modal-login__input"
+                       id="user-login"
+                       name="user-login"
+                       type="text"
+                       placeholder="Логин"
+                       required
+                >
+            </p>
+            <p>
+                <label class="modal-login__label visually-hidden" for="user-password"></label>
+                <input class="modal-login__user-password modal-login__input"
+                       id="user-password"
+                       name="user-password"
+                       type="password"
+                       placeholder="Пароль"
+                       required
+                >
+            </p>
+            <div class="modal-login__password-settings">
+                <p class="modal-login__remember-password password-settings__item">
+                    <label class="modal-login__label" for="keep-signed">
+                        <input class="modal-login__keep-signed" type="checkbox" id="keep-signed" name="keep-signed">
+                        <span class="modal-login__custom-checkbox-indicator"></span>
+                        <span class="modal-login__custom-checkbox">
+                            Запомнить пароль
+                        </span>
+                    </label>
+                </p>
+                <p class="modal-login__lost-password password-settings__item">
+                    <a class="modal-login__restore-password" href="#" aria-label="Я забыл пароль!">
+                        Я забыл пароль!
+                    </a>
+                </p>
+            </div>
+            <p class="modal-login__btn-group">
+                <button class="modal-login__submit btn-reset" type="submit">
+                    Войти
+                    <span>в личный кабинет</span>
+                </button>
+                <a class="modal-login__close" href="#" rel="modal:close">Закрыть</a>
+            </p>
+        </form>
+    </div>
+</section>
 
 	</div>
-<script src="js/vendor.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

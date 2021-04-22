@@ -1,16 +1,16 @@
-@import 'global';
-
-// CUSTOM COMPONENTS STYLES
-// .burger {
-//   --burger-width: 40px;
-//   --burger-height: 20px;
-//   --burger-line-height: 2px;
-
-//   @include burger;
-// }
-
-@import "./components/header";
-@import "./components/page-logo";
-@import "./components/page-navbar";
-@import "./components/main";
-@import "./components/stats";
+@import "global";
+@import "components/header";
+@import "components/page-logo";
+@import "components/page-navbar";
+@import "components/login";
+@import "components/stats";
+@import "components/advantages";
+@import "components/news";
+@import "components/reviews";
+@import "components/footer";
+@import "components/contact";
+@import "components/social";
+@import "components/copyright";
+@import "components/modal-login";
+@import "components/slick-custom-dots";
+@import "components/slick-custom-buttons";

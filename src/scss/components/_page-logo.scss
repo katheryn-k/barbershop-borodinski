@@ -1,16 +1,20 @@
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center();
+
+  @include mobile {
+    height: 85px;
+  }
+
   @include min-mobile {
     min-height: 153px;
   }
+}
 
-  &-image {
-    display: block;
-    @include min-mobile {
-      width: 370px;
-      height: 153px;
-    }
+.logo-image {
+  display: block;
+
+  @include min-mobile {
+    width: 370px;
+    height: 153px;
   }
 }

@@ -1,0 +1,54 @@
+.footer {
+  position: relative;
+  color: var(--color-pampas);
+  background-color: var(--color-mine-shaft);
+
+  @include mobile {
+    margin-top: 40px;
+    height: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      display: block;
+      width: 100%;
+      height: 60px;
+      background-image: url("../img/dark-corner.svg");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include tablet-width {
+    margin-top: -50px;
+  }
+
+  @include desktop {
+    margin-top: -45px;
+    height: 190px;
+  }
+}
+
+.footer__container {
+  position: relative;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include tablet-width {
+    flex-direction: column;
+    padding: 45px 0 50px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0 0;
+  }
+}

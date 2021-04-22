@@ -1,15 +1,38 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  min-height: 720px;
-  background-image: url("../img/bg-desktop-inner.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--color-black);
+  @include flex-column();
 
-  &__container {
-    order: 2;
+  @include mobile {
+    min-height: 135px;
+    background-color: var(--color-mine-shaft);
+  }
+
+  @include tablet-width {
+    min-height: 720px;
+    background-image: url("../img/bg-desktop-inner.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-black);
+  }
+
+  @include desktop {
+    min-height: 720px;
+    background-image: url("../img/bg-desktop-inner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-black);
+  }
+}
+
+.header__container {
+  order: 2;
+
+  @include tablet-width {
+    padding-top: 85px;
+  }
+
+  @include desktop {
     padding-top: 129px;
   }
 }
