@@ -552,6 +552,43 @@ ul {
   .login__icon:hover {
     fill: var(--color-roman-coffee); } }
 
+.our-works {
+  color: var(--color-black);
+  background-color: var(--color-white); }
+  @media (min-width: 768px) {
+    .our-works {
+      padding-bottom: 60px; } }
+  @media (min-width: 1200px) {
+    .our-works {
+      padding-bottom: 60px; } }
+
+.our-works__container {
+  position: relative; }
+
+.our-works__title {
+  text-transform: uppercase;
+  color: var(--color-black); }
+  @media (min-width: 1200px) {
+    .our-works__title {
+      margin: 0 15px 50px 0;
+      font-size: 40px;
+      line-height: 0.75; } }
+
+.our-works__return-btn {
+  position: absolute;
+  padding: 15px 35px; }
+  @media (max-width: 767px) {
+    .our-works__return-btn {
+      display: none; } }
+  @media (min-width: 768px) {
+    .our-works__return-btn {
+      top: 15px; } }
+  @media (min-width: 1200px) {
+    .our-works__return-btn {
+      right: 0;
+      top: 0;
+      display: block; } }
+
 .footer {
   position: relative;
   color: var(--color-pampas);
