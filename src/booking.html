@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Барбершоп ''Бородинский'' - запись на стрижку</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <meta property="og:title" content="Барбершоп «Бородинский» - истинно мужская классика">
+    <meta property="og:description" content="Быстрые, стильные стрижки от профессионалов своего дела">
+</head>
+<body>
+  <div class="site-container">
+      <header class="header booking-header" data-id-page="booking">
+          <div class="header__container container">
+              @include('partials/page-logo.html')
+          </div>
+          @include('partials/page-navbar.html')
+      </header>
+      <main class="main">
+          <h1 class="visually-hidden">
+              Барбершоп «Бородинский» - истинно мужская классика
+          </h1>
+
+      </main>
+      @include('partials/footer.html')
+      @include('partials/modal-login.html')
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+          integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+          crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
