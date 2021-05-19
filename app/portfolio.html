@@ -10,79 +10,77 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main-portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
     <meta property="og:title" content="Барбершоп «Бородинский» - истинно мужская классика">
     <meta property="og:description" content="Быстрые, стильные стрижки от профессионалов своего дела">
 </head>
 <body>
 <div class="site-container">
-
-    <header class="header site-header">
-    <div class="header__container container">
-        <a class="header__logo logo" href="#" aria-label="Логотип Барбершопа">
-            <picture>
-                <source media="(min-width: 1200px)" srcset="../img/logotype-v3.svg" type="image/svg+xml">
-                <source media="(min-width: 768px)" srcset="../img/logotype-v2.svg" type="image/svg+xml">
-                <img class="header__logo-image logo-image" src="../img/logotype-v1.svg" alt="Барбершоп «Бородинский»"
-                     width="226" height="30">
-            </picture>
-        </a>
-    </div>
-    <nav class="header__nav navbar navbar--closed">
-        <button class="navbar__toggle btn-reset">
-            <span class="visually-hidden">Открыть меню страницы</span>
-        </button>
-        <div class="navbar__wrapper">
-            <ul class="navbar__list">
-                <li class="navbar__item navbar__item--active">
-                    <a class="navbar__link">
-                        Главная
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="#">
-                        Наши работы
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="#">
-                        Записаться
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="#">
-                        Контакты
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="#">
-                        Инфо
-                    </a>
-                </li>
-            </ul>
-            <ul class="login">
-                <li class="login__item">
-                    <a class="login__link" href="#modal-login" aria-label="Вход в личный кабинет" rel="modal:open">
-                        <svg class="login__icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 16 16">
-                            <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
-                            <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
-                        </svg>
-                        <span>Вход</span>
-                    </a>
-                </li>
-            </ul>
+    <header class="header portfolio-header" data-id-page="portfolio">
+        <div class="header__container container">
+            <a class="header__logo logo" href="#" aria-label="Логотип Барбершопа">
+  <picture>
+    <source media="(min-width: 1200px)" srcset="../img/logotype-v3.svg" type="image/svg+xml">
+    <source media="(min-width: 768px)" srcset="../img/logotype-v2.svg" type="image/svg+xml">
+    <img class="header__logo-image logo-image" src="../img/logotype-v1.svg" alt="Барбершоп «Бородинский»"
+         width="226" height="30">
+  </picture>
+</a>
         </div>
-    </nav>
-</header>
-
+        <nav class="navbar navbar--closed">
+    <button class="navbar__toggle btn-reset">
+        <span class="visually-hidden">Открыть меню страницы</span>
+    </button>
+    <div class="navbar__wrapper">
+        <ul class="navbar__list">
+            <li class="navbar__item" data-nav-index>
+                <a class="navbar__link" href="index.html">
+                    Главная
+                </a>
+            </li>
+            <li class="navbar__item" data-nav-portfolio>
+                <a class="navbar__link" href="portfolio.html">
+                    Наши работы
+                </a>
+            </li>
+            <li class="navbar__item" data-nav-booking>
+                <a class="navbar__link" href="booking.html">
+                    Записаться
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="#">
+                    Контакты
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="#">
+                    Инфо
+                </a>
+            </li>
+        </ul>
+        <ul class="login">
+            <li class="login__item">
+                <a class="login__link" href="#modal-login" aria-label="Вход в личный кабинет" rel="modal:open">
+                    <svg class="login__icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 16 16">
+                        <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
+                        <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
+                    </svg>
+                    <span>Вход</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    </header>
     <main class="main">
         <h1 class="visually-hidden">
             Барбершоп «Бородинский» - истинно мужская классика
         </h1>
         <section class="our-works">
     <div class="our-works__container container">
-        <h2 class="our-works__title">
+        <h2 class="our-works__title section__title">
             Наши работы
         </h2>
         <a class="our-works__return-btn btn-reset section__btn" href="index.html">
@@ -90,26 +88,26 @@
         </a>
         <ul class="our-works__list">
             <li class="our-works__item">
-                <blockquote class="our-works__feedback">
+                <blockquote class="our-works__feedback our-works__feedback--best-of-the-month">
                     <div class="our-works__img-outer">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
-                            <img class="works-photo__img" src="img/photo-1-mobile.jpg" alt="Пример стрижки">
+                            <img class="our-works__feedback-photo feedback-photo" src="img/photo-1-mobile.jpg" alt="Пример стрижки">
                         </picture>
                         <em class="our-works__banner">
                             Работа месяца
                         </em>
                     </div>
-                    <div class="our-works__feedback-author feedback-author">
-                        <cite class="feedback-author__name">
+                    <div class="feedback-author--best-of-the-month">
+                        <cite class="feedback-author__name--best-of-the-month">
                             Лжепётр Мчиславский
                         </cite>
-                        <p class="feedback-author__text">
+                        <p class="feedback-author__text--best-of-the-month">
                             Где я только не стригся, но так как делаете это вы — не умеет никто другой!
                             Еще раз спасибо и до скорого!
                         </p>
-                        <ul class="our-works__options-list">
+                        <ul class="our-works__options-list--best-of-the-month">
                             <li class="our-works__options-list-item our-works__options-list-item--haircut">
                                 Стрижка
                             </li>
@@ -129,7 +127,7 @@
                         <picture>
                             <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
-                            <img class="works-photo__img" src="img/photo-2-mobile.jpg" alt="Пример стрижки">
+                            <img class="our-works__feedback-photo feedback-photo" src="img/photo-2-mobile.jpg" alt="Пример стрижки">
                         </picture>
                     </div>
                     <div class="our-works__feedback-author feedback-author">
@@ -137,7 +135,8 @@
                             Саша Мальцев
                         </cite>
                         <p class="feedback-author__text">
-                            Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+                            Попросил омолодить и омолодили!
+                            Кто теперь скажет, что мне 45?
                         </p>
                         <ul class="our-works__options-list">
                             <li class="our-works__options-list-item our-works__options-list-item--haircut">
@@ -153,12 +152,12 @@
                         <picture>
                             <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
-                            <img class="works-photo__img" src="img/photo-3-mobile.jpg" alt="Пример стрижки">
+                            <img class="our-works__feedback-photo feedback-photo" src="img/photo-3-mobile.jpg" alt="Пример стрижки">
                         </picture>
                     </div>
                     <div class="our-works__feedback-author feedback-author">
                         <cite class="feedback-author__name">
-                            Владимир Иванович
+                            Владимир Иваныч
                         </cite>
                         <p class="feedback-author__text">
                             К зимнему сезону - готов!
@@ -180,7 +179,7 @@
                         <picture>
                             <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">
-                            <img class="our-works__feedback-photo" src="img/photo-4-mobile.jpg" alt="Пример стрижки">
+                            <img class="our-works__feedback-photo feedback-photo" src="img/photo-4-mobile.jpg" alt="Пример стрижки">
                         </picture>
                     </div>
                     <div class="our-works__feedback-author feedback-author">
@@ -199,6 +198,100 @@
                 </blockquote>
             </li>
         </ul>
+    </div>
+</section>
+        <section class="price-list">
+    <div class="price-list__container container">
+        <h2 class="price-list__heading section__title">
+            Прейскурант
+        </h2>
+        <div class="price-list__columns">
+            <table class="price-list__content">
+                <tbody class="service">
+                <tr class="price-list__item">
+                    <td class="service__item service__item--number">
+                        1
+                    </td>
+                    <td class="service__item service__item--name">
+                        Классическая стрижка
+                    </td>
+                    <td class="service__item service__item--wash">
+                        <span class="service__item--details">
+                            (</span>С мытьём головы<span class="service__item--details">)
+                    </span>
+                    </td>
+                    <td class="service__item service__item--price">
+                        1 500 руб.
+                    </td>
+                </tr>
+                <tr class="price-list__item">
+                    <td class="service__item service__item--number">
+                        2
+                    </td>
+                    <td class="service__item service__item--name">
+                        Современный вариант
+                    </td>
+                    <td class="service__item service__item--wash">
+                        <span class="service__item--details">
+                            (</span>С мытьём головы<span class="service__item--details">)
+                    </span>
+                    </td>
+                    <td class="service__item service__item--price">
+                        1 500 руб.
+                    </td>
+                </tr>
+                <tr class="price-list__item">
+                    <td class="service__item service__item--number">
+                        3
+                    </td>
+                    <td class="service__item service__item--name">
+                        Индивидуальный подход
+                    </td>
+                    <td class="service__item service__item--wash">
+                        <span class="service__item--details">
+                            (</span>С мытьём головы<span class="service__item--details">)
+                    </span>
+                    </td>
+                    <td class="service__item service__item--price">
+                        2 000 руб.
+                    </td>
+                </tr>
+                <tr class="price-list__item">
+                    <td class="service__item service__item--number">4</td>
+                    <td class="service__item service__item--name">
+                        Бритьё бороды
+                    </td>
+                    <td class="service__item service__item--wash">
+                        <span class="service__item--details">
+                            (</span>Без мытья<span class="service__item--details">)
+                    </span>
+                    </td>
+                    <td class="service__item service__item--price">
+                        500 руб.
+                    </td>
+                </tr>
+                <tr class="price-list__item">
+                    <td class="service__item service__item--number">
+                        5
+                    </td>
+                    <td class="service__item service__item--name">
+                        Бритьё головы
+                    </td>
+                    <td class="service__item service__item--wash">
+                        <span class="service__item--details">
+                            (</span>С мытьём головы<span class="service__item--details">)
+                    </span>
+                    </td>
+                    <td class="service__item service__item--price">
+                        1 000 руб.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p class="price-list__discount">
+                С 10:00 до 14:00 скидка 20%
+            </p>
+        </div>
     </div>
 </section>
     </main>
@@ -300,7 +393,10 @@
 </section>
 
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>

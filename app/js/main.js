@@ -16,6 +16,15 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    let $active = 'navbar__item--active';
+    let $pageId = $('.header').attr('data-id-page');
+    let $activeNavItem = $(`[data-nav-${$pageId}]`);
+
+    $activeNavItem.addClass($active);
+})
+
+
+$(document).ready(function () {
     $(window).on('load resize', function () {
         if ($(window).width() > 750) {
             $('.reviews__list').slick({

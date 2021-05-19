@@ -1,27 +1,82 @@
 .our-works {
+  position: relative;
   color: var(--color-black);
-  background-color: var(--color-white);
+  background-color: var(--color-spring-wood);
 
-  @include tablet-width {
-    padding-bottom: 60px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -45px;
+    z-index: 1;
+    width: 100%;
+    height: 45px;
+    background-image: url("../img/spring-wood-corner.svg");
+    background-size: 100% 45px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    z-index: 1;
+    width: 100%;
+    height: 35px;
+    background-image: url("../img/dark-gray-corner.svg");
+    background-size: 100% 35px;
+    background-repeat: no-repeat;
+    background-color: var(--color-spring-wood);
+
+    @include desktop {
+      display: none;
+    }
   }
 
   @include desktop {
-    padding-bottom: 60px;
+    padding-bottom: 45px;
   }
 }
 
 .our-works__container {
   position: relative;
+
+  @include mobile {
+    padding: 0 20px 15px;
+  }
+
+  @include tablet-width {
+    padding-bottom: 50px;
+  }
+
+  @include desktop {
+    padding-top: 38px;
+    padding-bottom: 45px;
+  }
 }
 
 .our-works__title {
-  text-transform: uppercase;
   color: var(--color-black);
+
+  @include mobile {
+    margin: 0 0 30px;
+    padding-top: 30px;
+  }
+
+  @include tablet-width {
+    margin: 0 0 30px;
+    padding-top: 50px;
+  }
 
   @include desktop {
     margin: 0 15px 50px 0;
-    font-size: 40px;
+    padding-top: 25px;
     line-height: 0.75;
   }
 }
@@ -35,12 +90,358 @@
   }
 
   @include tablet-width {
-    top: 15px;
+    right: 0;
+    top: 50px;
+    display: block;
+  }
+}
+
+.our-works__list {
+  @include tablet-width {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 293px);
   }
 
   @include desktop {
-    right: 0;
+    display: grid;
+    column-gap: 38px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: 480px 540px;
+    padding-top: 40px;
+    row-gap: 40px;
+  }
+}
+
+.our-works__item {
+  border: 1px solid var(--color-pearl-bush);
+
+  @include mobile {
+    margin-bottom: 20px;
+    padding-bottom: 13px;
+  }
+
+  @include tablet-width {
+    padding-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include desktop {
+    padding-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.our-works__item:first-child {
+  @include mobile {
+    padding-bottom: 9px;
+  }
+
+  @include desktop {
+    grid-column: span 3;
+  }
+}
+
+.our-works__img-outer {
+  @include mobile {
+    position: relative;
+    text-align: center;
+  }
+}
+
+.our-works__feedback {
+  position: relative;
+  display: grid;
+  margin: 0;
+
+  @include tablet-width {
+    grid-template-columns: 270px 293px;
+  }
+
+  @include desktop {
+    grid-template-columns: auto;
+  }
+}
+
+.our-works__feedback--best-of-the-month {
+  .feedback-author--best-of-the-month {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include tablet-width {
+      padding: 45px 40px 30px;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      padding: 127px 20px 5px 30px;
+      height: 100%;
+    }
+  }
+
+  .feedback-author__name--best-of-the-month {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.125;
+    color: currentColor;
+
+    @include mobile {
+      align-self: flex-start;
+      margin: 11px 0 0 21px;
+    }
+
+    @include tablet-width {
+      margin-bottom: 27px;
+    }
+
+    @include desktop {
+      margin-bottom: 30px;
+      padding: 0 10px;
+    }
+  }
+
+  .feedback-author__text--best-of-the-month {
+    @include mobile {
+      align-self: flex-start;
+      margin: 15px 23px 17px;
+    }
+
+    @include tablet-width {
+      margin: 20px 15px 0 0;
+    }
+
+    @include desktop {
+      margin: 0;
+      padding: 0 120px 0 9px;
+    }
+  }
+
+  .our-works__options-list--best-of-the-month {
+    @include mobile {
+      margin-left: 8px;
+    }
+
+    @include tablet-width {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+      margin-left: -9px;
+    }
+
+    @include desktop {
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+  }
+
+  .our-works__options-list-item {
+    @include tablet-width {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  @include tablet-width {
+    grid-template-columns: 0.8fr 1fr;
+  }
+
+  @include desktop {
+    align-items: center;
+    grid-template-columns: repeat(2, 480px);
+  }
+}
+
+.our-works__banner {
+  position: absolute;
+  padding: 11px 22px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.35;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-roman-coffee);
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -10px;
     top: 0;
-    display: block;
+    border: 10px solid var(--color-roman-coffee);
+    border-top-width: 28px;
+    border-right-color: transparent;
+    border-bottom-width: 21px;
+    width: 20px;
+    height: 100%;
+    background: transparent;
+
+    @include desktop {
+      left: -10px;
+      transform: scaleX(-1);
+    }
+  }
+
+  @include mobile {
+    left: 0;
+    bottom: 37px;
+  }
+
+  @include tablet-width {
+    left: 0;
+    top: 35px;
+  }
+
+  @include desktop {
+    left: unset;
+    right: 0;
+    top: 25px;
+  }
+}
+
+.our-works__options-list {
+  display: flex;
+
+  @include mobile {
+    padding-right: 60px;
+    padding-left: 10px;
+  }
+
+  @include tablet-width {
+    margin-top: auto;
+    margin-bottom: 25px;
+    margin-left: 35px;
+  }
+
+  @include desktop {
+    margin-left: 0;
+  }
+}
+
+.our-works__options-list-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 25px;
+  }
+
+  @include tablet-width {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@each $image in haircut, mustache, beard {
+  .our-works__options-list-item--#{$image}::before {
+    background: url("../img/#{$image}-icon.svg") no-repeat 50% 50%;
+  }
+}
+
+.our-works__options-list-item:not(:last-child) {
+  @include desktop {
+    margin-right: 25px;
+  }
+}
+
+.feedback-photo {
+  @include tablet-width {
+    height: 100%;
+  }
+
+  @include desktop {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.feedback-author {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-width {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  @include desktop {
+    padding: 20px;
+    height: 100%;
+  }
+}
+
+.feedback-author__name {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.125;
+  color: currentColor;
+
+  @include mobile {
+    margin: 16px 16px 16px 21px;
+  }
+
+  @include tablet-width {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+}
+
+.feedback-author__text {
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.5;
+
+  @include mobile {
+    margin: 0 21px 17px;
+  }
+
+  @include tablet-width {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
+  @include desktop {
+    padding: 0 13px;
+  }
+}
+
+.feedback-author__text:nth-child(2) {
+  @include desktop {
+    height: 81px;
   }
 }

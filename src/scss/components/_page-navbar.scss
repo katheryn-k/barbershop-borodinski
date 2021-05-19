@@ -314,9 +314,7 @@
     margin-right: 35px;
   }
 
-  .navbar__item:not(:first-child) {
-    cursor: pointer;
-
+  .navbar__item:not(.navbar__item--active) {
     &:hover,
     &:focus {
       color: var(--color-roman-coffee);
@@ -333,7 +331,7 @@
     margin-right: 2px;
   }
 
-  .navbar__item:not(:first-child) {
+  .navbar__item:not(.navbar__item--active) {
     cursor: pointer;
 
     &:hover,
@@ -349,6 +347,8 @@
 }
 
 .navbar__item--active {
+  pointer-events: none;
+
   &::after {
     content: "";
     position: absolute;

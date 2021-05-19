@@ -10,6 +10,7 @@
   --color-tobacco-brown: #755a46;
   --color-shingle-fawn: #6a4d38;
   --color-silver: #cacaca;
+  --color-scorpion: #5e5e5e;
   --color-emperor: #545454;
   --color-gray-deep: #4e4e4e;
   --color-tundora: #404040;
@@ -442,36 +443,36 @@ ul {
 @media (min-width: 768px) {
   .navbar__item:not(:last-child) {
     margin-right: 35px; }
-  .navbar__item:not(:first-child) {
-    cursor: pointer; }
-    .navbar__item:not(:first-child):hover, .navbar__item:not(:first-child):focus {
-      color: var(--color-roman-coffee); }
-    .navbar__item:not(:first-child):active {
-      color: var(--color-silver); } }
+  .navbar__item:not(.navbar__item--active):hover, .navbar__item:not(.navbar__item--active):focus {
+    color: var(--color-roman-coffee); }
+  .navbar__item:not(.navbar__item--active):active {
+    color: var(--color-silver); } }
 
 @media (min-width: 1200px) {
   .navbar__item:not(:last-child) {
     margin-right: 2px; }
-  .navbar__item:not(:first-child) {
+  .navbar__item:not(.navbar__item--active) {
     cursor: pointer; }
-    .navbar__item:not(:first-child):hover, .navbar__item:not(:first-child):focus {
+    .navbar__item:not(.navbar__item--active):hover, .navbar__item:not(.navbar__item--active):focus {
       color: var(--color-black);
       background-color: var(--color-white); }
-    .navbar__item:not(:first-child):active {
+    .navbar__item:not(.navbar__item--active):active {
       color: var(--color-silver); } }
 
-.navbar__item--active::after {
-  content: "";
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  display: block;
-  height: 3px;
-  background-color: var(--color-roman-coffee); }
-  @media (min-width: 768px) {
-    .navbar__item--active::after {
-      left: 0;
-      right: 0; } }
+.navbar__item--active {
+  pointer-events: none; }
+  .navbar__item--active::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    display: block;
+    height: 3px;
+    background-color: var(--color-roman-coffee); }
+    @media (min-width: 768px) {
+      .navbar__item--active::after {
+        left: 0;
+        right: 0; } }
 
 .navbar__link {
   display: block;
