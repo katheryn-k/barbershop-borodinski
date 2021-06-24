@@ -1,4 +1,4 @@
-## [Барбершоп «Бородинский»](https://katheryn-k.github.io/)
+## [Барбершоп «Бородинский»](https://wonderful-varahamihira-939e5d.netlify.app)
 
 **Use:**
 
