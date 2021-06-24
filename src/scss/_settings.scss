@@ -33,6 +33,12 @@ ul {
   padding: 0;
 }
 
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
 .is-outer {
   position: relative !important; // stylelint-disable-line declaration-no-important
   left: -9999px !important; // stylelint-disable-line declaration-no-important
@@ -101,12 +107,12 @@ ul {
 
   &:hover,
   &:focus {
-    border: 1px solid #d5c9bd;
+    border: 1px solid var(--color-sisal);
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.4);
-    background: #d5c9bd;
+    background: var(--color-sisal);
   }
 }
 

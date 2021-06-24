@@ -62,6 +62,11 @@ ul {
   margin: 0;
   padding: 0; }
 
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0; }
+
 .is-outer {
   position: relative !important;
   left: -9999px !important; }
@@ -126,10 +131,10 @@ ul {
   text-transform: uppercase;
   color: var(--color-black); }
   .section__btn:hover, .section__btn:focus {
-    border: 1px solid #d5c9bd; }
+    border: 1px solid var(--color-sisal); }
   .section__btn:active {
     color: rgba(0, 0, 0, 0.4);
-    background: #d5c9bd; }
+    background: var(--color-sisal); }
 
 @media (max-width: 767px) {
   .container {

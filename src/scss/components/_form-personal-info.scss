@@ -1,0 +1,121 @@
+.form__field--full-name {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  @include tablet-width {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+
+.form__row--name {
+  .form__input--name {
+    @include tablet-width {
+      width: 100%;
+    }
+
+    @include desktop {
+      margin-right: 35px;
+      width: 295px;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+
+.form__row--contact {
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet-width {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.form__row--message {
+  .form__input--message {
+    min-height: 210px;
+    resize: none;
+
+    @include mobile {
+      padding: 8px 18px 10px;
+      width: 100%;
+      min-height: 112px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+
+  @include tablet-width {
+    width: 640px;
+  }
+
+  @include desktop {
+    width: 960px;
+  }
+}
+
+.full-name__row {
+  display: flex;
+}
+
+.full-name__label {
+  &--tel {
+    @include tablet-width {
+      width: 100%;
+    }
+
+    @include desktop {
+      margin-right: 40px;
+      width: 460px;
+    }
+  }
+
+  &--email {
+    @include tablet-width {
+      width: 100%;
+    }
+
+    @include desktop {
+      width: 460px;
+    }
+  }
+}
+
+.full-name__input {
+  display: block;
+  outline: none;
+  border: 1px solid var(--color-pearl-bush);
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.25;
+  background-color: var(--color-white);
+
+  &::placeholder {
+    color: var(--color-black);
+  }
+
+  @include mobile {
+    margin-bottom: 7px;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  @include tablet-width {
+    margin-bottom: 35px;
+    padding: 20px 15px 18px 25px;
+  }
+}

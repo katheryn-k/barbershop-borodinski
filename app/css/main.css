@@ -63,6 +63,11 @@ ul {
   margin: 0;
   padding: 0; }
 
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0; }
+
 .is-outer {
   position: relative !important;
   left: -9999px !important; }
@@ -127,10 +132,10 @@ ul {
   text-transform: uppercase;
   color: var(--color-black); }
   .section__btn:hover, .section__btn:focus {
-    border: 1px solid #d5c9bd; }
+    border: 1px solid var(--color-sisal); }
   .section__btn:active {
     color: rgba(0, 0, 0, 0.4);
-    background: #d5c9bd; }
+    background: var(--color-sisal); }
 
 @media (max-width: 767px) {
   .container {
@@ -817,7 +822,7 @@ ul {
 
 .advantages {
   position: relative;
-  background-image: url("../img/light-corner.svg");
+  background-image: url("../img/spring-wood-corner.svg");
   background-position: bottom;
   background-size: 100% 65px;
   background-repeat: no-repeat; }
@@ -974,7 +979,7 @@ ul {
 .news {
   overflow: hidden;
   color: var(--color-black);
-  background-color: var(--color-white); }
+  background-color: var(--color-spring-wood); }
 
 .news__container {
   position: relative;
@@ -1144,7 +1149,7 @@ ul {
 .reviews {
   overflow: hidden;
   color: var(--color-black);
-  background-color: var(--color-white); }
+  background-color: var(--color-spring-wood); }
 
 .reviews__container {
   position: relative; }
@@ -1860,7 +1865,7 @@ ul {
       top: -15px;
       margin: auto;
       width: 20%;
-      background-color: var(--color-white); } }
+      background-color: var(--color-spring-wood); } }
   @media (min-width: 1200px) {
     .slick__custom-dots {
       position: relative;
@@ -1899,7 +1904,7 @@ ul {
   border: 1px solid var(--color-pearl-bush);
   width: 50px;
   height: 165px;
-  background: var(--color-white); }
+  background-color: var(--color-spring-wood); }
   .slick__btn-prev::before {
     content: "◄";
     position: absolute;
@@ -1918,7 +1923,7 @@ ul {
   border: 1px solid var(--color-pearl-bush);
   width: 50px;
   height: 165px;
-  background: var(--color-white); }
+  background-color: var(--color-spring-wood); }
   .slick__btn-next::before {
     content: "►";
     position: absolute;
