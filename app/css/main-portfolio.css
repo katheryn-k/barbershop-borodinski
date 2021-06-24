@@ -50,7 +50,8 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: var(--color-pampas);
-  background-color: var(--color-mine-shaft); }
+  background-color: var(--color-mine-shaft);
+  scroll-behavior: smooth; }
 
 img {
   max-width: 100%; }
